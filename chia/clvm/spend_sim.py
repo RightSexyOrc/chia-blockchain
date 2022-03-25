@@ -106,6 +106,7 @@ class SpendSim:
             self.block_height = store_data.block_height
             self.block_records = store_data.block_records
             self.blocks = store_data.blocks
+            self.mempool_manager.peak = self.block_records[-1]
         else:
             self.timestamp = 1
             self.block_height = 0
